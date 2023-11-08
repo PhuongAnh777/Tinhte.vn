@@ -7,11 +7,13 @@
     <title>Tinhte.vn - MXH Hỏi đáp, Review, Thông tin công nghệ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" data-href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" data-optimized-fonts="true">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+     <!-- our project just needs Font Awesome Solid + Brands -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/Css/base.css">
+    <link rel="stylesheet" href="./assets/Css/main.css">
 </head>
 <body>
     <div class="app">
@@ -26,16 +28,22 @@
                         </div>
                     </div>
                     <div class="middle">
-                        <div class="menu">
+                        <div class="middle__search">
                             <div class="search__bar">
-                                <input class="search" type="text" placeholder="Tìm sản phẩm công nghệ, cộng đồng, bạn bè...">
+                                <div class="search__bar__1">
+                                    <input class="search" type="text" placeholder="Tìm sản phẩm công nghệ, cộng đồng, bạn bè...">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="right">
                         <button class="user">
-                            <i class="fa-solid fa-user"></i>
-                            <i class="fa-sharp fa-light fa-tally-3 fa-rotate-90"></i>
+                            <sgv>
+                                <i class="fa-light fa-circle-user"></i>
+                            </sgv>
+                            <span>
+                                <i class="fa-solid fa-user"></i>
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -43,7 +51,20 @@
         </header>
 
        <div class="container">
-
+            <div class="task__bar">
+                <ul class="menu">
+                    <li class="tag__hot">
+                        <a class="home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="tag__hot">#scary fast</li>
+                    <li class="tag__hot">#lý do mua</li>
+                    <li class="tag__hot">#iphone 15</li>
+                    <li class="tag__hot">#trên tay</li>
+                    <li class="tag__hot">#trải nghiệm</li>
+                </ul>
+            </div>
        </div>
 
        <footer class="footer">
