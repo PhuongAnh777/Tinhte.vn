@@ -1,0 +1,106 @@
+
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 320px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Điều chỉnh giá trị để có độ cong mong muốn */
+}
+
+
+
+
+.user {
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.user:hover #menu-icon {
+    opacity: 1;
+}
+
+#dropdown-menu {
+    list-style: none;/* bỏ chấm ul li */
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100px;
+    right: 30px;
+    background-color: #fff;
+    display: none;
+    
+    border: 1px solid #cfcfcf;
+}
+
+#dropdown-menu.active {
+    display: block;
+}
+/* Nút đăng ký và đăng nhập */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #4CAF50; /* Màu khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+/* Nút đăng ký */
+.signup-button {
+    background-color: #fff; /* Màu nền */
+    color: #080808; /* Màu chữ */
+    
+    margin: 10px;
+}
+
+.signup-button:hover {
+    background-color: #2980b9; /* Màu khi hover */
+}
+
+/* Nút đăng nhập */
+.login-button {
+    background-color: #fff; /* Màu nền */
+    color: #080808; /* Màu chữ */
+    margin: 10px;
+}
+
+.login-button:hover {
+    background-color: #27ae60; /* Màu khi hover */
+}
