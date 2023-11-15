@@ -33,9 +33,9 @@
     }
     img {
       max-width: 100%; /* Điều chỉnh kích thước cho màn hình nhỏ hơn 600px */
-  }
-  .video-container {
-    padding-bottom: 35%; /* Tỷ lệ khung hình 4:3 cho di động */
+    }
+    .video-container {
+      padding-bottom: 35%; /* Tỷ lệ khung hình 4:3 cho di động */
 }
 .video-wrapper {
   position: relative;
@@ -80,14 +80,15 @@
 /* CSS cho container */
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 .container {
-    max-width: 1176px; /* Điều chỉnh chiều rộng tối đa của container theo ý muốn */
+    max-width: 1178px; /* Điều chỉnh chiều rộng tối đa của container theo ý muốn */
     margin: 0 auto; /* Căn giữa container */
 }
 .container1 {
     max-width: 826px; /* Điều chỉnh chiều rộng tối đa của container theo ý muốn */
-    margin: 190px; 
+    margin-left: 175px; 
 }
 /* CSS cho thanh điều hướng */
 .navbar {
@@ -150,12 +151,12 @@ body {
 
 .story-title-duoi {
     overflow: hidden;
-  }
+}
   
 .story-item-detail {
     flex: 0 0 auto;
     scroll-snap-align: start;    
-  position: relative;
+    position: relative;
 }
 .story-item-detail p {
     position: absolute;
@@ -165,22 +166,43 @@ body {
     text-align: center;
     font-size: 16px;
     color: #fff;
-  }  
+}  
 .post{
     max-width: 1140px;
     display: flex;
     margin: 0px auto;
 }
   
-  .post-trai{
-    flex: 4;
+.post-trai{
+    flex: 3;
     margin: 10px; /* Điều chỉnh khoảng cách giữa các phần tử */
   }
-  .post-giua{
+
+.post-trai-img {
+  display: flex;
+  font-size: 12px;
+}
+
+.post-trai-img div {
+  margin-right: 20px; /* Khoảng cách giữa mỗi hình ảnh và tiêu đề */
+}
+.post-trai img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ width của phần tử cha */
+    border-radius: 10px; /* Điều chỉnh độ cong của viền ảnh */
+}
+
+.post-giua{
     flex: 2;
     margin: 10px; /* Điều chỉnh khoảng cách giữa các phần tử */
-  }
-  .post-phai {
+    text-align: center; /* Căn giữa nội dung trong .post-giua */
+}
+
+.post-giua img {
+  width: 100%; /* Đảm bảo ảnh chiếm toàn bộ width của phần tử cha */
+  border-radius: 10px; /* Điều chỉnh độ cong của viền ảnh */
+}
+
+.post-phai {
     flex: 2;
     margin: 10px; /* Điều chỉnh khoảng cách giữa các phần tử */
     overflow: hidden; /* Ẩn phần bên trái và trên của phần tử */
@@ -191,11 +213,27 @@ body {
     border-right: none; /* Ẩn viền bên phải */
     border-top: none; /* Ẩn viền phía trên */
 }
-  .post-phai-detail {
+.post-phai-detail {
     position: relative;
-    margin-left: 15px; /* Tăng khoảng cách giữa dấu chấm và nội dung */
+    margin-left: 10px; /* Tăng khoảng cách giữa dấu chấm và nội dung */
+    display: flex;
+    align-items: center; /* Canh giữa theo chiều dọc */
+    padding:10px;
 }
 
+.post-phai-detail img {
+    width: 120px;
+    height: 60px;
+    /* width: 60%; Đảm bảo ảnh chiếm toàn bộ width của phần tử cha */
+    border-radius: 8px; /* Điều chỉnh độ cong của viền ảnh */
+}
+.post-phai-detail a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #070707;
+    text-decoration: none;    
+    margin-right: 10px; /* Khoảng cách giữa tiêu đề và hình ảnh */
+}
 .post-phai-detail::before {
     content: '\2022'; /* Ký tự dấu chấm tròn */
     position: absolute;
@@ -205,37 +243,6 @@ body {
     color: blue; /* Màu sắc của dấu chấm */
     z-index: 1; /* Đặt z-index để nó đè lên trên bo viền */
 }
-  
-  .post-giua {
-    text-align: center; /* Căn giữa nội dung trong .post-giua */
-  }
-  
-  .post-trai img,
-  .post-giua img {
-    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ width của phần tử cha */
-    border-radius: 10px; /* Điều chỉnh độ cong của viền ảnh */
-  }
-  .post-phai img {
-    width: 60%; /* Đảm bảo ảnh chiếm toàn bộ width của phần tử cha */
-    border-radius: 10px; /* Điều chỉnh độ cong của viền ảnh */
-  }
-  .post-phai-detail a{    
-    text-decoration: none;    
-    margin-right: 10px; /* Khoảng cách giữa tiêu đề và hình ảnh */
-  }
-  .post-phai-detail {
-    display: flex;
-    align-items: center; /* Canh giữa theo chiều dọc */
-    padding:10px;
-  }
-  .post-trai-img {
-    display: flex;
-    font-size: 12px;
-  }
-
-  .post-trai-img div {
-    margin-right: 20px; /* Khoảng cách giữa mỗi hình ảnh và tiêu đề */
-  }
   
   .topblog{
     max-width: 1140px;
@@ -264,9 +271,103 @@ body {
     margin-bottom: 15px; 
 }
 
+.deep-talk {
+    padding: 30px 24px;
+    flex-direction: column;
+    display: flex;
+    background-color: #f2f4f7;
+    border-radius: 3%;
+}
+
+.deep-talk-head {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.deep-talk-head a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.deep-talk-head img {
+    width: 140px;
+    max-width: 100%;
+    margin-right: 16px;
+}
+
+.deep-talk-head span {
+    color: hsl(330,85%,48%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.deep-talk-main {
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+
+.deep-talk-threads {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.deep-talk-item {
+    width: 180px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+    height: 280px;
+    display: flex;
+    scroll-snap-align: start;    
+    margin-bottom: 10px;
+}
+
+.deep-talk-item a:hover {
+    cursor: pointer;
+    color: #0768ea;
+}
+
+.deep-talk-thumb {
+    width: 160px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+    height: 280px;
+    bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.deep-talk-thumb img{
+    width: 160px; /* Điều chỉnh kích thước ảnh theo ý muốn */
+    height: 280px;
+    border-radius: 5%; /* Bo tròn viền cho ảnh */
+}
+
+.deep-talk-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    position: absolute;
+    margin: 0px;
+    left: 12px;
+    right: 12px;
+    bottom: 35px;
+}
+
+.deep-talk-underline {
+    width: 64px;
+    height: 3px;
+    margin: 8px auto 0px;
+    border-radius: 15px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    right: 50px;
+}
+
 .top-threads{
     height: 360px;
-    margin-left: 20px;
     margin-bottom: 10px;
     background-image: linear-gradient(0, #5ec3b7, #1c48f3) ;
     border: 1px solid #ddd;
@@ -382,15 +483,15 @@ body {
   color: #fff;
 }
 .form-group button {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: #4a57e2;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;  
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4a57e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;  
     margin-bottom: 10px; 
 }
 
@@ -398,37 +499,83 @@ body {
     background-color: #45a049;
 }
 
-.youtube {
+.video {
     max-width: 826px; 
     height: 350px; 
     background-color:#01152F;
-    margin-bottom: 30px;
-}
-.custom-youtube-item {
-    /* display: flex; */
-    gap: 10px; /* Khoảng cách giữa các phần tử */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    /* display: inline-block; Hiển thị các phần tử trên cùng 1 hàng */
-    margin-right: 10px; /* Khoảng cách giữa các ảnh */
-    vertical-align: top; /* Dọc trên để ảnh và chữ nằm trên cùng 1 đường */
+    overflow: auto; /* Tạo thanh cuộn khi nội dung vượt quá kích thước */
+    box-sizing: border-box;
+   
 }
 
-.custom-youtube-item-detail img {
-    width: 132px; /* Đặt kích thước cho ảnh */
-    height: 83px;
-    border-radius: 5px; /* Bo tròn góc của ảnh nếu muốn */
+.video-row {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: inline-block;
+    width: 100%;
 }
-/* 
-.custom-youtube-item-detail p {
-    width: 80px;
-    height: 70px;
-} */
-.custom-youtube {
-    height: 350px; /* Đặt chiều cao phần tử chứa ảnh */
-    overflow: auto; /* Tạo thanh cuộn khi nội dung vượt quá kích thước */
+
+.video-row-item {
     white-space: nowrap; /* Ngăn chữ xuống dòng để ảnh và chữ nằm trên cùng 1 hàng */
     color: #fff;
-    padding: 15px;
+    padding: 16px 10px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.video-row-item-detail {
+    overflow: hidden;
+    width: 100%;
+    outline: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color:#01152F;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+}
+
+.video-row-item-detail:hover {
+    background-color: #0f295b;
+}
+.video-row-picture {
+    display: block;
+}
+.video-row-picture img {
+    width: 132px;
+    aspect-ratio: auto 132 / 84;
+    height: 84px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.video-row-content {
+    flex: 1 1 0px;
+    margin-left: 12px;
+}
+
+.video-row-content h4 {
+    color: #ffffff;
+    text-align: left;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.form-group-video button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #E6F0FD;
+    color: #1570EF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;  
+    margin-bottom: 10px; 
+    font-size: 16px;
 }
 
 .video-comput{
