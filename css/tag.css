@@ -1,11 +1,16 @@
+.container3 {
+    max-width: 832px;
+    margin: 0px auto;
+}
 .tagdetail{
-    max-width: 1140px;
+    max-width: 832px;
     margin: 0px auto;
     border-bottom: 1px solid #000000;
     padding: 20px;
 }
 .blogtag{
     margin-top:20px;
+    border-style: none;
 }
 /* Nút Theo Dõi */
 .follow-button {
