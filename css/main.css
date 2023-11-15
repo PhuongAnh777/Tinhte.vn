@@ -331,33 +331,33 @@ body {
 }   */
 
 .content-container-right img {
-  width: 240px;
-  height: 147px;
-  /* width: 100%; */
-  border-radius: 8px;
+    width: 240px;
+    height: 147px;
+    /* width: 100%; */
+    border-radius: 8px;
 }
 .text-content-left {
-  flex: 2;
-  padding: 0 20px;
+    flex: 2;
+    padding: 0 20px;
 }
 
 
 .text-content-left a img {
-  width: 30px; /* Điều chỉnh kích thước của ảnh user */
-  border-radius: 50%; /* Bo tròn góc cho ảnh user */
+    width: 30px; /* Điều chỉnh kích thước của ảnh user */
+    border-radius: 50%; /* Bo tròn góc cho ảnh user */
 }
 
 #scrollToTopBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: opacity 0.2s;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
 }
 
 
@@ -395,38 +395,41 @@ body {
 }
 
 .form-group button:hover {
-  background-color: #45a049;
-}
-.custom-story-item {
-  display: flex;
-  gap: 10px; /* Khoảng cách giữa các phần tử */
-  align-items: center; /* Căn giữa theo chiều dọc */
+    background-color: #45a049;
 }
 
-.custom-story-item-detail img {
-  width: 250px; /* Đặt kích thước cho ảnh */
-  height: 120px;
-  border-radius: 5px; /* Bo tròn góc của ảnh nếu muốn */
+.youtube {
+    max-width: 826px; 
+    height: 350px; 
+    background-color:#01152F;
+    margin-bottom: 30px;
+}
+.custom-youtube-item {
+    /* display: flex; */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    /* display: inline-block; Hiển thị các phần tử trên cùng 1 hàng */
+    margin-right: 10px; /* Khoảng cách giữa các ảnh */
+    vertical-align: top; /* Dọc trên để ảnh và chữ nằm trên cùng 1 đường */
 }
 
-.custom-story-item-detail p {
-  width: 80px;
-  height: 70px;
+.custom-youtube-item-detail img {
+    width: 132px; /* Đặt kích thước cho ảnh */
+    height: 83px;
+    border-radius: 5px; /* Bo tròn góc của ảnh nếu muốn */
 }
-.custom-story-title-duoi {
-  height: 200px; /* Đặt chiều cao phần tử chứa ảnh */
-  overflow: auto; /* Tạo thanh cuộn khi nội dung vượt quá kích thước */
-  white-space: nowrap; /* Ngăn chữ xuống dòng để ảnh và chữ nằm trên cùng 1 hàng */
-  color: #fff;
-  padding: 15px;
+/* 
+.custom-youtube-item-detail p {
+    width: 80px;
+    height: 70px;
+} */
+.custom-youtube {
+    height: 350px; /* Đặt chiều cao phần tử chứa ảnh */
+    overflow: auto; /* Tạo thanh cuộn khi nội dung vượt quá kích thước */
+    white-space: nowrap; /* Ngăn chữ xuống dòng để ảnh và chữ nằm trên cùng 1 hàng */
+    color: #fff;
+    padding: 15px;
 }
-
-.custom-story-item {
-  display: inline-block; /* Hiển thị các phần tử trên cùng 1 hàng */
-  margin-right: 10px; /* Khoảng cách giữa các ảnh */
-  vertical-align: top; /* Dọc trên để ảnh và chữ nằm trên cùng 1 đường */
-}
-
 
 .video-comput{
   max-width: 1140px;

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết story</title>
+    <link rel="stylesheet" href="css/header.css">
+    
+    <link rel="stylesheet" href="css/story.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <img class="story-image" src="image/story/1.png" alt="Story Image">
+    </div>
+    <div class="right">
+        
+        <div class="post">
+            <div class="user">
+                <img src="image/user.png">
+                <div style="display: block;">
+                   <b><p style="color: blue;" class="username">Cường Nhét Tỏi</p></b>
+                    <p class="username">42 phút - 112 người xem</p>                
+                </div>             
+            </div>
+            
+            
+            <h2>CƠ SỞ SẢN XUẤT BÁNH DỪA NƯỚNG BẢO LINH</h2>
+            <p>
+            🏫 Trụ sở: 51 Nguyễn Gia Thiều, P. Tân Thạnh, Tam Kỳ, Quảng Nam.
+            🌴FB: https://www.facebook.com/banhduabaolinh</p>
+        </div>
+        <div class="comment">
+            <h3>Bình luận</h3>
+            <div id="comments"></div>
+            <textarea id="commentInput" placeholder="Viết bình luận của bạn"></textarea>
+            <button onclick="postComment()">Bình luận</button>
+        </div>
+        <div class="post" style="margin-top: 10px;">
+            <div class="user">
+                <img src="image/user.png">
+                <div style="display: block;">
+                   <b><p style="color: blue;" class="username">Cường Nhét Tỏi</p></b>
+                    <p>42 phút</p>           
+                </div>          
+            </div>         
+            
+            <p style="font-size: 15px;">hay quá bạn</p>
+            
+        </div>
+        <div class="post" style="margin-top: 10px;">
+            <div class="user">
+                <img src="image/user.png">
+                <div style="display: block;">
+                   <b><p style="color: blue;" class="username">Cường Nhét Tỏi</p></b>
+                    <p>12 phút</p>           
+                </div>          
+            </div>         
+            
+            <p style="font-size: 15px;">very good</p>
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    function postComment() {
+        var commentInput = document.getElementById('commentInput');
+        var commentText = commentInput.value;
+        var commentsContainer = document.getElementById('comments');
+        var commentElement = document.createElement('p');
+        commentElement.textContent = commentText;
+        commentsContainer.appendChild(commentElement);
+        commentInput.value = '';
+    }
+</script>
+
+</body>
+</html>

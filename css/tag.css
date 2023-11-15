@@ -1,0 +1,26 @@
+.tagdetail{
+    max-width: 1140px;
+    margin: 0px auto;
+    border-bottom: 1px solid #000000;
+    padding: 20px;
+}
+.blogtag{
+    margin-top:20px;
+}
+/* Nút Theo Dõi */
+.follow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    background-color: #0098fd; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: 1px solid #0098fd; /* Viền nút */
+}
+
+.follow-button:hover {
+    background-color: #2980b9; /* Màu khi hover */
+}

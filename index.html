@@ -542,50 +542,47 @@
             <div class="story">
                 <!-- <div style="max-width: 1140px;margin: 0px auto;">
                     <iframe width="800" height="470" src="https://www.youtube.com/embed/g1mxWD3hAZ8" frameborder="0" allowfullscreen></iframe>
-                </div> -->
+                </div> -->      
                 <div>
-                    <div style="max-width: 1140px;margin: 0px auto;">
-                        <iframe width="800" height="470" src="https://www.youtube.com/embed/g1mxWD3hAZ8" frameborder="0" allowfullscreen></iframe>
+                    <div>
+                        <iframe id="youtubeVideo" width="826" height="470" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    
                 </div>
-                <div class="story-title" style="    max-width: 800px;
-                margin-left: 375px;background-color:#01152F ;">
-                    
-                    <div class="custom-story-title-duoi">
-                        <div class="custom-story-item">
-                            <div class="custom-story-item-detail"> 
-                                <img src="image/story/3.jpg" alt="ảnh">
+                <div class="youtube" > 
+                    <div class="custom-youtube">
+                        <div class="custom-youtube-item" onclick="changeVideo()">
+                            <div class="custom-youtube-item-detail"> 
+                                <img src="image/youtube/1.jpg" alt="ảnh">
+                            </div>
+                            <div>
+                                <p>Trải nghiệm Google Pixel 8: cũng bình thường thôi!</p>
+                            </div>
+                            <div class="custom-youtube-item-detail"> 
+                                <img src="image/youtube/2.jpg" alt="ảnh">                            
+                            </div>
+                            <div>
+                                <p>Trên tay BMW X5 G05 LCI 2023: Động cơ mới 375HP, Da ghế Merino cao cấp, ngoại hình trẻ trung</p>
+                            </div>
+                            <div class="custom-youtube-item-detail"> 
+                                <img src="image/youtube/3.jpg" alt="ảnh">                            
+                            </div>
+                            <div>
+                                <p>“Robin Hood” của anh em quay video lên Fullframe</p>
+                            </div>
+                            <div class="custom-youtube-item-detail"> 
+                                <img src="image/youtube/3.jpg" alt="ảnh">
                             </div>
                             <div>
                                 <p>Đây là camera tốt nhất trong thế giới điện thoại gập! | OPPO Find N3</p>
                             </div>
-                            <div class="custom-story-item-detail"> 
-                                <img src="image/story/1.jpg" alt="ảnh">                            
+                            <div class="custom-youtube-item-detail"> 
+                                <img src="image/youtube/1.jpg" alt="ảnh">                            
                             </div>
                             <div>
                                 <p>Đây là camera tốt nhất trong thế giới điện thoại gập! | OPPO Find N3</p>
                             </div>
-                            <div class="custom-story-item-detail"> 
-                                <img src="image/story/2.jpg" alt="ảnh">                            
-                            </div>
-                            <div>
-                                <p>Đây là camera tốt nhất trong thế giới điện thoại gập! | OPPO Find N3</p>
-                            </div>
-                            <div class="custom-story-item-detail"> 
-                                <img src="image/story/3.jpg" alt="ảnh">
-                            </div>
-                            <div>
-                                <p>Đây là camera tốt nhất trong thế giới điện thoại gập! | OPPO Find N3</p>
-                            </div>
-                            <div class="custom-story-item-detail"> 
-                                <img src="image/story/1.jpg" alt="ảnh">                            
-                            </div>
-                            <div>
-                                <p>Đây là camera tốt nhất trong thế giới điện thoại gập! | OPPO Find N3</p>
-                            </div>
-                            <div class="custom-story-item-detail"> 
-                                <img src="image/story/2.jpg" alt="ảnh">                            
+                            <div class="custom-youtube-item-detail"> 
+                                <img src="image/youtube/2.jpg" alt="ảnh">                            
                             </div>
                             <div>
                                 <p>Đây là camera tốt nhất trong thế giới điện thoại gập! | OPPO Find N3</p>
@@ -1050,4 +1047,18 @@
 		
     </footer>
 </body>
+<script>
+    newVideoId=  "g1mxWD3hAZ8";
+    var iframe = document.getElementById("youtubeVideo");
+    iframe.src = "https://www.youtube.com/embed/" + newVideoId;
+    var currentVideoIndex = -1; // Index của video hiện tại
+        // Danh sách video
+        var videoList = [
+        "Vnn_BSSy5ck?si=JcUGl6Dwtg9thpxr",
+        "18GteA2pCMc?si=FMgidThFpWfyTGe6",
+        "IgteZaKyRtU?si=z358qBpyVxXGQD6_"
+        // Thêm các VIDEO_ID khác vào đây
+    ];
+   
+</script>
 </html>

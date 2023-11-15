@@ -1,0 +1,82 @@
+/* Đặt các style chung ở đây */
+
+/* Style cho màn hình có chiều rộng lớn hơn 600px */
+@media only screen and (min-width: 600px) {
+    .login-container {
+        max-width: 400px; /* Chỉ định chiều rộng tối đa cho màn hình lớn hơn 600px */
+        margin: 0 auto; /* Căn giữa theo chiều ngang */
+    }
+}
+
+/* Style cho màn hình có chiều rộng nhỏ hơn hoặc bằng 600px */
+@media only screen and (max-width: 600px) {
+    .login-container {
+        width: 100%; /* Chiều rộng tối đa là 100% cho màn hình nhỏ */
+    }
+    .form-group input {
+        width: 100%; /* Chiều rộng 100% cho input trên màn hình nhỏ */
+    }
+}
+a{
+    text-decoration: none;
+}
+/* Style chung */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-container img {
+    display: block;
+    margin: 20px auto;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #c6c7d1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #13dd1d;
+}
+
+
+

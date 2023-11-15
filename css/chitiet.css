@@ -1,0 +1,110 @@
+/* Nút Theo Dõi */
+.follow-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    background-color: #3498db; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: 1px solid #2980b9; /* Viền nút */
+}
+
+.follow-button:hover {
+    background-color: #2980b9; /* Màu khi hover */
+}
+/* Phần chính của trang chi tiết */
+.chitietdetail {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px; /* Điều chỉnh theo nhu cầu */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Phần bên trái */
+.chitiettrai {
+    width: 70%; /* Điều chỉnh theo nhu cầu */
+    display: flex;
+    flex-direction: column;
+}
+
+.chitiettrai h3 {
+    font-size: 24px;
+}
+
+.chitiettrai div {
+    display: flex;
+    align-items: center;
+}
+
+.chitiettrai img {
+    border-radius: 50%; /* Bo tròn ảnh */
+    margin-right: 10px;
+    width: 6%;
+    height: auto;
+}
+
+.chitiettrai p {
+    margin: 10px;
+}
+
+.chitiettrai button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chitiettrai button:hover {
+    background-color: #2980b9;
+}
+
+/* Phần bên phải */
+.chitietphai {
+    width: 30%; /* Điều chỉnh theo nhu cầu */
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.traichitiet-a img{
+    
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của phần tử */
+    height: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều cao của phần tử */
+    margin: 0; 
+    border-radius:0;
+
+}
+.additional-info {
+    margin-left: 50px; /* hoặc bất kỳ giá trị margin nào bạn muốn */
+}
+.traichitiet-a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa hình ảnh và đoạn văn bản */
+    font-size: 25px;
+}
+.blogtag img {
+    width: 100%;
+    margin: 0; 
+    border-radius:0;
+}
+.latest-posts {
+    max-width: 800px; /* Điều chỉnh chiều rộng tối đa */
+    margin: 0 auto; /* Đưa vào giữa trang */
+}
+
+.post {
+    display: flex; /* Hiển thị các bài viết theo chiều ngang */
+    gap: 20px; /* Khoảng cách giữa các bài viết */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.post img {
+    max-width: 100px; /* Điều chỉnh kích thước ảnh */
+    height: auto; /* Duy trì tỉ lệ khung hình */
+}
