@@ -6,6 +6,14 @@
         width: 100%;
         margin-right: 0;
     }
+    .post-trai {
+        width: 100%;
+        margin-right: 0;
+    }
+    .container1 {
+        width: 100%;
+        margin-left: 0px;
+    }
     .info {
         padding-top: 10px; 
         margin: 10px;
@@ -32,10 +40,10 @@
         padding: 0; 
     }
     img {
-      max-width: 100%; /* Điều chỉnh kích thước cho màn hình nhỏ hơn 600px */
+        max-width: 100%; /* Điều chỉnh kích thước cho màn hình nhỏ hơn 600px */
     }
     .video-container {
-      padding-bottom: 35%; /* Tỷ lệ khung hình 4:3 cho di động */
+        padding-bottom: 35%; /* Tỷ lệ khung hình 4:3 cho di động */
 }
 .video-wrapper {
   position: relative;
@@ -700,36 +708,62 @@ a:hover {
 }
 
 .video-comput{
-  max-width: 1140px;
-  margin: 0px auto;
-  display: flex;
-  margin-top: 10px;
-}
-.video-comput-right{
-  flex: 4;
+    max-width: 1178px;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-left: 175px;
+    display: flex;
 }
 .video-comput-left{
-  flex: 2;
-  border: 1px solid #b1aeae;
-  border-radius: 15px;
-  height: 200px;
+    flex: 6;
+}
+.video-comput-right {
+    flex: 2;
+}
+.video-comput-right-tag{
+    border: none;
+    border-radius: 10px;
+    width: 332px;
+    height: 187px;
+    background-color: #f2f4f7;
+}
+.video-comput-right-congdong {
+    border: 1px solid #b1aeae;
+    border-radius: 15px;
+    width: 332px;
+    height: 390px;
 }
  /* Định dạng các phần tử container để hiển thị trên cùng một hàng */
  .custom-container {
-  display: flex;
-  justify-content: space-around; /* Các phần tử con sẽ được căn giữa và cách nhau một khoảng */
-  align-items: center; /* Căn các phần tử con theo chiều dọc */
+    display: flex;
+    justify-content: space-around; /* Các phần tử con sẽ được căn giữa và cách nhau một khoảng */
+    align-items: center; /* Căn các phần tử con theo chiều dọc */
 }
 
 /* Định dạng mỗi phần tử con */
 .custom-item {
-  text-align: center;
+    text-align: center;
+}
+.custom-img-tag {
+    height: 60px;
+    width: 90px;
+}
+/* Định dạng ảnh */
+.custom-img-congdong {
+    height: 90px;
+    width: 145px;
 }
 
-/* Định dạng ảnh */
-.custom-img {
-  width: 80%; /* Ảnh chiếm toàn bộ width của phần tử con */
-  max-width: 200px; /* Kích thước tối đa của ảnh */
-  height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+.button-watch-all button {
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #e5e6ed;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    margin-bottom: 10px; 
+    margin-left: 30px;
 }
 
